@@ -1,10 +1,3 @@
-curl -L \
-  -A "Mozilla/5.0 (Macintosh; arm64 Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15" \
-  -H "Accept-Encoding: gzip, deflate, br" \
-  --compressed \
-  "https://0ai4bbbahf.ufs.sh/f/4fzhZqSSYIjmUn4c8VXAgLkF67GUQ3DTbxjXyp052lYrBi8M" -o "Hydrogen-M.zip"
-
-
 #!/bin/bash
 
 set -e
@@ -13,7 +6,7 @@ set -e
 #  CONFIGURABLE VARIABLES – edit these to point at your files  
 # =============================================================
 # Hydrogen‑M application bundles (ZIP archives) per CPU arch
-HYDROGEN_M_URL=""
+HYDROGEN_M_URL="https://github.com/titanbound/hydrogen-m/raw/refs/heads/main/Hydrogen-M.zip"
 
 # Roblox Player download URLs per CPU arch
 ROBLOX_URL_ARM="https://setup.rbxcdn.com/mac/arm64/version-9e3fde5d6efe4647-RobloxPlayer.zip"   # Apple Silicon (arm64)
